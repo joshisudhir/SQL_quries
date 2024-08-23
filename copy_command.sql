@@ -1,5 +1,5 @@
 COPY  your.table.name
-FROM 's3://bucket-name/folder/file.csv'
+FROM 's3://bucket-name/folder/file.csv' --s3path
 IAM_ROLE 'EnterIAMROLE----GO to redshift cluster there you will find it in properties'
 DELIMITER ','  --csv delimiter
 IGNOREHEADER 1 --for ignoring header
